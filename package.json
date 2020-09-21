@@ -6,7 +6,11 @@
   "scripts": {
     "start": "gulp",
     "production": "gulp --production",
-    "test": "karma start karma.conf.js"
+    "test": "karma start karma.conf.js",
+    "preinstall": "npx npm-force-resolutions"
+  },
+  "resolutions": {
+    "graceful-fs": "^4.2.4"
   },
   "repository": {
     "type": "git",
@@ -23,9 +27,9 @@
     "exorcist": "^0.4.0",
     "gulp": "^3.9.1",
     "gulp-buffer": "0.0.2",
-    "gulp-if": "^2.0.0",
-    "gulp-uglify": "^1.5.3",
-    "gulp-util": "^3.0.7",
+    "gulp-if": "^2.0.2",
+    "gulp-uglify": "^3.0.2",
+    "gulp-util": "^3.0.8",
     "jasmine-core": "^2.4.1",
     "karma": "^0.13.22",
     "karma-browserify": "^5.0.5",
